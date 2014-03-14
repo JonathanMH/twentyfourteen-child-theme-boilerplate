@@ -1,0 +1,90 @@
+
+// import parent theme style
+@import url("../../../twentyfourteen/style.css");
+
+@vzb-secondary-bg: darken(#363b3f, 8%);
+@vzb-primary: #e14d43;
+@vzb-secondary: #69a8bb;
+@vzb-primary-hover: lighten(@vzb-primary, 10%);
+
+
+// links
+a, .widget a, .site-info a, .entry-title a, .comment-author a {
+	color: @vzb-primary;
+	&:hover {
+		color: @vzb-primary-hover;
+	}
+	&:visited {
+		color: @vzb-primary;	
+	}
+}
+
+// search bar
+.search-toggle, .search-toggle.active, .search-container, .search-box {
+	background: @vzb-primary;
+	&:hover, &:active, &:visited {
+		background: @vzb-secondary;
+	}
+}
+
+// headings
+.site-title a {
+	color: white;
+}
+
+h1.entry-title a {
+	color: black;
+	&:visited {
+		color: black;
+	}
+}
+
+.entry-meta a, .entry-meta .entry-date a {
+	color: @vzb-secondary;
+	&:hover {
+		color: @vzb-primary;
+	}
+}
+
+.entry-meta .tag-links a {
+	&:hover {
+		background-color: @vzb-secondary;
+		&::before {
+			border-right-color: @vzb-secondary;
+		}
+	}
+}
+
+h1 {}
+
+button {
+	background-color: @vzb-primary;
+}
+
+.paging-navigation .page-numbers.current {
+	border-top: 5px solid @vzb-secondary;
+}
+
+// backgrounds of header and sidebar
+#masthead, #colophon, #secondary {
+	background: @vzb-secondary-bg;
+}
+
+// navigation
+.secondary-navigation li {
+	border-top: 1px solid @vzb-secondary;
+}
+
+#primary-navigation li a {
+	color: white;
+	&:hover {
+		background-color: @vzb-primary;
+	}
+}
+
+::selection {
+	background: @vzb-primary;
+}
+::-moz-selection {
+	background: @vzb-primary;
+}
