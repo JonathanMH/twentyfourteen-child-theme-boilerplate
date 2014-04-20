@@ -1,0 +1,24 @@
+{
+  "name": "twentyfourteen-child-theme-boilerplate",
+  "version": "0.0.1",
+  "description": "Twenty Fourteen Theme Child Theme Boilerplate",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JonathanMH/twentyfourteen-child-theme-boilerplate.git"
+  },
+  "author": "Jonathan M. Hethey",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/JonathanMH/twentyfourteen-child-theme-boilerplate/issues"
+  },
+  "homepage": "https://github.com/JonathanMH/twentyfourteen-child-theme-boilerplate",
+  "devDependencies": {
+    "gulp": "^3.5.6",
+    "gulp-watch": "^0.5.2",
+    "gulp-less": "^1.2.3"
+  }
+}

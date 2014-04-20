@@ -2,28 +2,25 @@
 // import parent theme style
 @import url("../../../twentyfourteen/style.css");
 
-@vzb-secondary-bg: darken(#363b3f, 8%);
-@vzb-primary: #e14d43;
-@vzb-secondary: #69a8bb;
-@vzb-primary-hover: lighten(@vzb-primary, 10%);
+@import url("../themes/default.less");
 
 
 // links
-a, .widget a, .site-info a, .entry-title a, .comment-author a {
-	color: @vzb-primary;
+a, .widget a, .site-info a, .entry-title a, .comment-author a, #tinymce a .post-navigation a, .image-navigation a, .site-navigation a {
+	color: @my-colour-primary;
 	&:hover {
-		color: @vzb-primary-hover;
+		color: @my-colour-primary-hover;
 	}
 	&:visited {
-		color: @vzb-primary;	
+		color: @my-colour-primary;
 	}
 }
 
 // search bar
 .search-toggle, .search-toggle.active, .search-container, .search-box {
-	background: @vzb-primary;
+	background: @my-colour-secondary;
 	&:hover, &:active, &:visited {
-		background: @vzb-secondary;
+		background: @my-colour-primary;
 	}
 }
 
@@ -40,51 +37,62 @@ h1.entry-title a {
 }
 
 .entry-meta a, .entry-meta .entry-date a {
-	color: @vzb-secondary;
+	color: @my-colour-secondary;
 	&:hover {
-		color: @vzb-primary;
+		color: @my-colour-primary;
 	}
 }
 
 .entry-meta .tag-links a {
 	&:hover {
-		background-color: @vzb-secondary;
+		background-color: @my-colour-secondary;
 		&::before {
-			border-right-color: @vzb-secondary;
+			border-right-color: @my-colour-secondary;
 		}
 	}
 }
 
-h1 {}
+h1.entry-title {
+	text-transform: none;
+}
 
 button {
-	background-color: @vzb-primary;
+	background-color: @my-colour-primary;
 }
 
 .paging-navigation .page-numbers.current {
-	border-top: 5px solid @vzb-secondary;
+	border-top: 5px solid @my-colour-secondary;
 }
 
 // backgrounds of header and sidebar
 #masthead, #colophon, #secondary {
-	background: @vzb-secondary-bg;
+	background: @my-colour-secondary-bg;
 }
 
 // navigation
 .secondary-navigation li {
-	border-top: 1px solid @vzb-secondary;
+	border-top: 1px solid @my-colour-secondary;
+}
+
+.secondary-navigation li, .secondary-navigation li > a {
+	&:hover, &:active, &:focus {
+		background-color: @my-colour-primary;
+		a {
+			background-color: @my-colour-primary;
+		}
+	}
 }
 
 #primary-navigation li a {
 	color: white;
 	&:hover {
-		background-color: @vzb-primary;
+		background-color: @my-colour-primary;
 	}
 }
 
 ::selection {
-	background: @vzb-primary;
+	background: @my-colour-primary;
 }
 ::-moz-selection {
-	background: @vzb-primary;
+	background: @my-colour-primary;
 }
